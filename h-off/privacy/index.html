@@ -19,7 +19,7 @@
   <p>h.off is an independent app. It is not made, endorsed or supported by Haier, Hoover or Candy. "h.on", "Haier", "Hoover" and "Candy" belong to their owners.</p>
 
   <h2>In short</h2>
-  <p>h.off has no servers of its own, no accounts, no advertising and no analytics. The developer does not receive any of your information unless you choose to send it: by sharing a report yourself, or by switching on crash reports. Both are off unless you use them.</p>
+  <p>h.off has no servers of its own, no accounts, no advertising and no analytics. The developer does not receive any of your information unless you choose to send it: by sharing a report yourself, or by switching on crash reports or wash reports. All of these are off unless you use them.</p>
 
   <h2>What the app talks to</h2>
   <p>The app connects directly from your phone to Haier's h.on servers (<code>account2.hon-smarthome.com</code> and <code>api-iot.he.services</code>). It does this to sign you in, to read your machine's status and programs, and to send the commands you choose (start, pause, resume, stop). Haier's own privacy policy applies to what Haier does with that information.</p>
@@ -40,13 +40,14 @@
   <ul>
     <li><strong>Send a report.</strong> This makes a file on your phone with what the app can see of your machine: its model, its current readings, its recent activity on h.on, its program list and your recent washes. Sign-in tokens, the name you gave the machine, its MAC address and serial number, and email addresses are removed first. Android's share menu then opens, and the file only goes wherever you choose to send it.</li>
     <li><strong>Crash reports</strong> (off until you switch them on). When the app crashes or hits an error, it sends a report to <a href="https://sentry.io/privacy/">Sentry</a>, a service the developer uses to find and fix bugs. A report contains the error, where in the app it happened, what the app did just before, the app version, your phone's model and Android version, and a random ID for this installation. It does not contain screenshots, your sign-in details, the machine's name, MAC address or serial number: these are removed on your phone before anything is sent. The app asks Sentry not to store your IP address. Reports are only used to fix problems in h.off, and Sentry deletes them automatically after a limited time. Switching crash reports off stops them straight away.</li>
+    <li><strong>Wash reports</strong> (off until you switch them on). At the end of each wash, the app sends a short summary to a small server run by the developer on Cloudflare. It is used to learn how different machines report the end of a program, so h.off can tell more reliably when a wash has finished. A report contains the app version, your phone's model and Android version, the machine's model and brand, the program, when it finished, the energy and water it used, and the machine's final readings. It does not contain your sign-in details, the machine's name, MAC address or serial number, or any ID for you or your phone. The server does not keep your IP address with the report. Reports are deleted automatically after 180 days. Switching wash reports off stops them straight away.</li>
   </ul>
 
   <h2>Notifications</h2>
   <p>The "wash finished" alert is created on your phone. No notification service is involved. If you decline the notification permission, the app works without alerts.</p>
 
   <h2>Sharing, selling and tracking</h2>
-  <p>h.off does not sell or share your information, does not track you, and does not contain advertising. The app talks to Haier's h.on service, as described above, and to Sentry only if you switch on crash reports.</p>
+  <p>h.off does not sell or share your information, does not track you, and does not contain advertising. The app talks to Haier's h.on service, as described above, to Sentry only if you switch on crash reports, and to the developer's Cloudflare server only if you switch on wash reports.</p>
 
   <h2>Children</h2>
   <p>h.off is not aimed at children and does not knowingly collect information from them.</p>
